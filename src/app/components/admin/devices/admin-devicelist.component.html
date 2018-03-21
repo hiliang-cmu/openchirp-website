@@ -1,0 +1,32 @@
+<div class="admin-device-list" >
+  <md-card>
+    <div class="card-header">
+      <h2>List of Devices</h2>
+      <div class="search">
+        <md-input-container>
+          <input mdInput placeholder="Search" [(ngModel)]="searchTerm" name="search">
+        </md-input-container>
+        <md-icon>search</md-icon>
+      </div>
+    </div>
+    <ng2-md-datatable>
+      <!-- Table Header-->
+      <ng2-md-datatable-header>
+        <ng2-md-datatable-column>Device Name</ng2-md-datatable-column>
+      </ng2-md-datatable-header>
+      <tbody>
+        <ng2-md-datatable-row *ngFor="let device of filtered()" class="devices" (click)="gotoDevice(device._id)">
+          <td>{{ device.name }}</td>
+        </ng2-md-datatable-row>
+        <ng2-md-datatable-row *ngIf="devices.length == 0">
+          <td>Currently no devices to display.</td>
+        </ng2-md-datatable-row>
+      </tbody>
+    </ng2-md-datatable>
+   <!--<ng2-md-datatable-pagination
+      [currentPage]="currentPagination.currentPage"
+      [itemsPerPage]="currentPagination.itemsPerPage"
+      [itemsCount]="currentPagination.totalCount"
+      [itemsPerPageChoices]="[5, 10, 15]"></ng2-md-datatable-pagination>-->
+  </md-card>
+</div>

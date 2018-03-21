@@ -42,7 +42,7 @@ import { ConfirmationDialogComponent } from './components/dialogs/confirmation-d
 import { PropertiesComponent } from './components/dialogs/properties.component';
 import { ListInfraServicesComponent } from './components/infraservices/list.infraservices.component';
 import { ConfigRequiredComponent } from './components/infraservices/config.required.component';
-import { NewInfraServiceComponent } from './components/infraservices/new.infraservice.component'; 
+import { NewInfraServiceComponent } from './components/infraservices/new.infraservice.component';
 import { SelectServiceComponent } from './components/infraservices/select-service.component';
 import { InputConfigComponent } from './components/dialogs/input-config.component';
 import { InputTransducerValueComponent } from './components/dialogs/input-transducer-value.component';
@@ -56,6 +56,7 @@ import { PublicLinkComponent } from './components/publiclink/public-link.compone
 import { DeviceAclComponent } from './components/devices/device-information/device-acl.component';
 import { StatsComponent } from './components/admin/stats/stats.component';
 import { UserProfileComponent } from './components/userprofile/userprofile.component';
+import { AdminDeviceListComponent } from './components/admin/devices/admin-devicelist.component';
 
 // Services
 import { LocationService } from './services/location.service';
@@ -115,7 +116,8 @@ import { AdminService } from './services/admin.service';
     PublicLinkComponent,
     DeviceAclComponent,
     StatsComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    AdminDeviceListComponent
   ],
   imports: [
     BrowserModule,
@@ -149,7 +151,7 @@ import { AdminService } from './services/admin.service';
     ConfirmationDialogComponent,
     SelectTemplateComponent,
     SelectServiceComponent,
-    PropertiesComponent,  
+    PropertiesComponent,
     ConfigRequiredComponent,
     InputConfigComponent,
     InputTransducerValueComponent,
