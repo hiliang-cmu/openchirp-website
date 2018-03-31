@@ -59,25 +59,23 @@ export class AdminDeviceListComponent {
         // if (typeof(x.name) == "string" && typeof(x.description == "string") && typeof(x.owner == "string")) {
           let device_name: string = x.name;
           let name_match = device_name.toLowerCase().includes(this.searchTerm.toLowerCase());
-          if (name_match) return true;
+          if (name_match) { return true; }
 
           /* @todo other fields as returned in future
           if(x.description){
             var device_description: string = x.description;
             var description_match = device_description.toLowerCase().includes(this.searchTerm.toLowerCase());
             if (description_match) return true;
-          }
+          } */
           if (x.owner.name) {
-            var device_owner: string = x.owner.name;
+            let device_owner: string = x.owner.name;
             var owner_match = device_owner.toLowerCase().includes(this.searchTerm.toLowerCase());
           }
           else {
-            var device_owner: string = x.owner.email;
+            let device_owner: string = x.owner.email;
             var owner_match = device_owner.toLowerCase().includes(this.searchTerm.toLowerCase());
           }
           if (owner_match) return true;
-          */
-
         }
         return false;
       });

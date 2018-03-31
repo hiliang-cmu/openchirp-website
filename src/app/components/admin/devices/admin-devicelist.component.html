@@ -13,10 +13,14 @@
       <!-- Table Header-->
       <ng2-md-datatable-header>
         <ng2-md-datatable-column>Device Name</ng2-md-datatable-column>
+        <ng2-md-datatable-column>Owner</ng2-md-datatable-column>
+        <ng2-md-datatable-column>Location</ng2-md-datatable-column>
       </ng2-md-datatable-header>
       <tbody>
         <ng2-md-datatable-row *ngFor="let device of filtered()" class="devices" (click)="gotoDevice(device._id)">
           <td>{{ device.name }}</td>
+          <td>{{ device.owner.name }} ({{ device.owner.email }})</td>
+          <td>{{ device.location.name }}</td>
         </ng2-md-datatable-row>
         <ng2-md-datatable-row *ngIf="devices.length == 0">
           <td>Currently no devices to display.</td>
