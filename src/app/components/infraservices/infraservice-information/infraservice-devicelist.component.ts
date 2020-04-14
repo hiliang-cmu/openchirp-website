@@ -4,7 +4,7 @@ import {switchMap} from 'rxjs/operators';
 import {InfraService} from '../../../services/infraservice';
 
 import {GlobalDataService} from '../../../services/global.data.service';
-import {MatDialog} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
 import {Device} from '../../../models/device';
 import {ViewConfigComponent} from '../../dialogs/view-config.component';
 
@@ -32,6 +32,7 @@ export class InfraServiceDeviceListComponent implements OnInit {
       switchMap((params: Params) => this.infraService.getServiceDevices(params['id'])))
       .subscribe(
         result => {
+          // @ts-ignore
           this.devices = result;
         },
         error => this.router.navigate(['/home/services'])

@@ -5,7 +5,7 @@ import {ActivatedRoute, Params, Router} from '@angular/router';
 import {DeviceService} from '../../services/device.service';
 import {SuccessDialogService} from '../../services/success-dialog.service';
 import {ErrorDialogService} from '../../services/error-dialog.service';
-import {MatDialog} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
 import {ConfirmationDialogComponent} from '../dialogs/confirmation-dialog.component';
 
 

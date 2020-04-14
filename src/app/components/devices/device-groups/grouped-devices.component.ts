@@ -5,7 +5,8 @@ import {DeviceService} from '../../../services/device.service';
 import {DeviceGroupService} from '../../../services/device-group.service';
 import {SuccessDialogService} from '../../../services/success-dialog.service';
 import {ErrorDialogService} from '../../../services/error-dialog.service';
-import {MatDialog, MatSort, Sort} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
+import {MatSort, Sort} from '@angular/material/sort';
 import {ConfirmationDialogComponent} from '../../dialogs/confirmation-dialog.component';
 
 import {SelectDeviceComponent} from '../select-device.component';

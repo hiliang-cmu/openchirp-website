@@ -1,5 +1,5 @@
 import {Observable} from 'rxjs';
-import {MatDialog, MatDialogRef} from '@angular/material';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import {Injectable} from '@angular/core';
 import {SuccessDialogComponent} from '../components/dialogs/success-dialog.component';
 

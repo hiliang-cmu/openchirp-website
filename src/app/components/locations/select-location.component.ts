@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {MatDialog, MatDialogRef} from '@angular/material';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import {ConfirmationDialogComponent} from '../dialogs/confirmation-dialog.component';
 import {LocationService} from '../../services/location.service';
 

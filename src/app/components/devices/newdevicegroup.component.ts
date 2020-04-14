@@ -1,7 +1,7 @@
 import {switchMap} from 'rxjs/operators';
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute, Params, Router} from '@angular/router';
-import {MatDialog} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
 
 import {Location} from '../../models/location';
 import {LocationService} from '../../services/location.service';

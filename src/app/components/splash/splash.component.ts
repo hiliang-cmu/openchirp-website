@@ -1,9 +1,10 @@
 import {Component, HostListener, Inject, OnInit, ViewEncapsulation} from '@angular/core';
-import {DOCUMENT, DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
+import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
+import {DOCUMENT} from '@angular/common';
 import {Configuration} from '../../config';
 import {UserService} from '../../services/user.service';
 import {LoginComponent} from '../login/login.component';
-import {MatDialog} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-splash',

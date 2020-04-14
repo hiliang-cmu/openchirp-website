@@ -2,7 +2,7 @@ import {map, startWith, switchMap} from 'rxjs/operators';
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute, Params, Router} from '@angular/router';
-import {MatDialog} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
 import {SuccessDialogService} from '../../services/success-dialog.service';
 import {ErrorDialogService} from '../../services/error-dialog.service';
 import {ConfirmationDialogComponent} from '../dialogs/confirmation-dialog.component';

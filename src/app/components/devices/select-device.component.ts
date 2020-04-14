@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {MatDialogRef} from '@angular/material';
+import {MatDialogRef} from '@angular/material/dialog';
 import {DeviceService} from '../../services/device.service'
 import {ErrorDialogService} from '../../services/error-dialog.service';
 

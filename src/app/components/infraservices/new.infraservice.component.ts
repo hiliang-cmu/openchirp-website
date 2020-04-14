@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 
-import {MatSnackBar} from '@angular/material';
+import {MatSnackBar} from '@angular/material/snack-bar';
 import {InfraService} from '../../services/infraservice';
 
 import {SuccessDialogService} from '../../services/success-dialog.service';

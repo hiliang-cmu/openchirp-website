@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Router} from '@angular/router';
-import {MatDialog} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
 import {Device} from '../../../models/device';
 import {DeviceService} from '../../../services/device.service';
 import {ErrorDialogService} from '../../../services/error-dialog.service';

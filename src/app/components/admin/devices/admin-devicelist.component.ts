@@ -3,7 +3,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 
 import {AdminService} from '../../../services/admin.service';
 import {ErrorDialogService} from '../../../services/error-dialog.service';
-import {Sort} from '@angular/material';
+import {Sort} from '@angular/material/sort';
 
 @Component({
   selector: 'admin-devicelist',

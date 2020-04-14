@@ -5,7 +5,7 @@ import {GlobalDataService} from '../../services/global.data.service';
 import {Location} from '../../models/location';
 import {Device} from '../../models/device';
 import {Router} from '@angular/router';
-import {DOCUMENT} from '@angular/platform-browser';
+import {DOCUMENT} from '@angular/common';
 import {Configuration} from '../../config';
 import {AuthService} from '../../services/auth.service';
 import {ErrorDialogService} from '../../services/error-dialog.service';

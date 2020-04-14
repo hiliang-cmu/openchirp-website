@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {MatDialogRef} from '@angular/material';
+import {MatDialogRef} from '@angular/material/dialog';
 import {DeviceService} from '../../services/device.service';
 import {DeviceGroupService} from '../../services/device-group.service';
 import {ErrorDialogService} from '../../services/error-dialog.service';
