@@ -3,7 +3,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientJsonpModule, HttpClientModule} from '@angular/common/http';
-import {HttpModule, JsonpModule} from '@angular/http';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {
   MatAutocompleteModule,
@@ -174,8 +173,6 @@ import {AuthService} from './services/auth.service';
     ReactiveFormsModule,
     HttpClientJsonpModule,
     HttpClientModule,
-    HttpModule,
-    JsonpModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
